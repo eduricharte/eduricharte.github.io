@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play">
+    <title>Missio Registro</title>
+    <!--Scripts-->
+    <script src="js/app.js"></script>
+    <!--Icono-->
+    <link rel="icon" href="recursos/Logo_Missio_SinFondo.png" type="image/png" />
+</head>
+<body>
+    <div class="header">
+        <img src="recursos/Logo_Missio_SinFondo.png" alt="Missio" height="150px">
+        <hr>
+    </div>
+
+    <!--Datos para el formulario-->
+    <div class="rest">    
+        <h2>Por favor ingresa tus datos</h2>
+        <form action="php/insert.php" id="register" method="POST" autocomplete="on"> 
+        <p>Nombre completo:<input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre completo" autofocus required></p>
+        <p>Edad: <input type="number" name="edad" id="edad" placeholder="14" min="14" max="99" required></p>
+        <p>Número de telefono:<input type="tel" name="telefono" id="telefono" placeholder="6141234567" pattern="[0-9]{10}" required></p>
+        <p>Facebook:<input type="text" name="facebook" id="facebook" placeholder="Ingresa tu facebook" required></p>
+        <p>¿Estás bautizado por la iglesia católica?<br>
+            <input type="radio" name="bautizado" id="bautizado_s" value="s" checked required><label for="bautizados">Sí</label>
+            <input type="radio" name="bautizado" id="bautizado_n" value="n" required><label for="bautizadon">No</label> </p>
+        <p>¿Estás confirmado por la iglesia católica? <br>
+            <input type="radio" name="confirmado" id="confirmado_s" value="s" checked required><label for="confirmados">Sí</label>
+            <input type="radio" name="confirmado" id="confirmado_n" value="n" required><label for="confirmadon">No</label></p>
+        <p>¿Haz asistido a algún retiro de Evangelización? <br>
+            <input type="radio" name="evangelizado" id="evangelizado_s" value="s" checked required><label for="evangelizados">Sí</label>
+            <input type="radio" name="evangelizado" id="evangelizado_n" value="n" required><label for="evangelizadon">No</label></p>
+        <p>¿Es tu primera vez en Missio? <br>
+            <input type="radio" name="first_time" id="first_time_s" value="s" checked required><label for="first_times">Sí</label>
+            <input type="radio" name="first_time" id="first_time_n" value="n" required><label for="first_timen">No</label></p>
+        <p>¿Por qué te gustaría entrar a Missio?
+            <input type="text" name="entrar_a_missio" id="entrar_a_missio" placeholder="Cuéntanos tu razón!" required>
+            <br>
+            <select name="servidores1" required>
+                <option value="Default" disabled selected hidden>--- Elige a tu servidor ---</option>
+                <option value="MariaClara_Jolu">Maria Clara y Jolu</option>
+                <option value="Jorge_Ferza">Jorge Hernández y Fernanda Zapata</option>
+                <option value="Rocha_Gladys">Luis Rocha y Gladys</option>
+                <option value="Salinas_Denisse">Salinas y Denisse</option>
+                <option value="Edu_Grecia">Edú y Grecia</option>
+                <option value="Ale_Meraz">Ale Meraz</option>
+                <option value="Andrea_Cristy">Andreita y Cristy</option>
+                <option value="Daniel_Villalobos">Daniel Villalobos</option>
+                <option value="Eddie_Olivas">Eddie Olivas</option>
+                <option value="Lucia_Valenzuela">Lucía Valenzuela</option>
+                <option value="Jona_Paola">Jona y Paola Regalado</option>
+                <option value="Klaire_Sandra">Klaire y Sandra</option>
+                <option value="Perla_Venecia">Perla y Venecia</option>
+                <option value="Erika_Pipe">Erika y Luis Felipe</option>
+                <option value="Gera_Ana">Gera y Ana Hernández</option>
+            </select>
+            <br>
+            <p></p>
+            <select name="servidores2" required>
+                <option value="Default" disabled selected hidden>--- Elige a tu servidor ---</option>
+                <option value="MariaClara_Jolu">Maria Clara y Jolu</option>
+                <option value="Jorge_Ferza">Jorge Hernández y Fernanda Zapata</option>
+                <option value="Rocha_Gladys">Luis Rocha y Gladys</option>
+                <option value="Salinas_Denisse">Salinas y Denisse</option>
+                <option value="Edu_Grecia">Edú y Grecia</option>
+                <option value="Ale_Meraz">Ale Meraz</option>
+                <option value="Andrea_Cristy">Andreita y Cristy</option>
+                <option value="Daniel_Villalobos">Daniel Villalobos</option>
+                <option value="Eddie_Olivas">Eddie Olivas</option>
+                <option value="Lucia_Valenzuela">Lucía Valenzuela</option>
+                <option value="Jona_Paola">Jona y Paola Regalado</option>
+                <option value="Klaire_Sandra">Klaire y Sandra</option>
+                <option value="Perla_Venecia">Perla y Venecia</option>
+                <option value="Erika_Pipe">Erika y Luis Felipe</option>
+                <option value="Gera_Ana">Gera y Ana Hernández</option>
+            </select>
+            <br>
+            <p></p>
+            <select name="servidores3" required>
+                <option value="Default" disabled selected hidden>--- Elige a tu servidor ---</option>
+                <option value="MariaClara_Jolu">Maria Clara y Jolu</option>
+                <option value="Jorge_Ferza">Jorge Hernández y Fernanda Zapata</option>
+                <option value="Rocha_Gladys">Luis Rocha y Gladys</option>
+                <option value="Salinas_Denisse">Salinas y Denisse</option>
+                <option value="Edu_Grecia">Edú y Grecia</option>
+                <option value="Ale_Meraz">Ale Meraz</option>
+                <option value="Andrea_Cristy">Andreita y Cristy</option>
+                <option value="Daniel_Villalobos">Daniel Villalobos</option>
+                <option value="Eddie_Olivas">Eddie Olivas</option>
+                <option value="Lucia_Valenzuela">Lucía Valenzuela</option>
+                <option value="Jona_Paola">Jona y Paola Regalado</option>
+                <option value="Klaire_Sandra">Klaire y Sandra</option>
+                <option value="Perla_Venecia">Perla y Venecia</option>
+                <option value="Erika_Pipe">Erika y Luis Felipe</option>
+                <option value="Gera_Ana">Gera y Ana Hernández</option>
+            </select>
+            <br>
+            <p></p>
+            <button type="submit" class="button" onclick="onSubmit()">Registrarse</button>
+        </form>
+    </div>
+
+</body>
+</html>

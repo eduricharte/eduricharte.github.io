@@ -1,0 +1,117 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    background: url(recursos/bg.jpg);
+    background-size: contain;
+}
+.header{
+    text-align: center;
+}
+.rest{
+    background: rgba(255, 255, 255,0.7);
+    color: #000;
+    padding: 40px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 18px;
+    height: auto;
+    align-self: center;
+}
+input[type=text]{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px, solid #000;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding:10px;
+    transition: border,0.5s;
+    outline: none;
+    color: #000;
+}
+input[type=number]{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px, solid #000;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding:10px;
+    transition: border,0.5s;
+    outline: none;
+    color: #000;
+}
+input[type=tel]{
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px, solid #000;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding:10px;
+    transition: border,0.5s;
+    outline: none;
+    color: #000;
+}
+input[type='button']{
+    border: none;
+    width: 190px;
+    background: rgba(255, 255, 255,0.7);
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+input[type='button']:hover{
+    color: #fff;
+    background-color: #5c0709;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+::placeholder{
+    color: #616161;
+    opacity: 0.8;
+}
+p{
+    font-weight: bold;
+}
+button{
+    border: none;
+    width: 190px;
+    background: rgba(255, 255, 255,0.7);
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover{
+    color: #fff;
+    background-color: #5c0709;
+}
+select{
+    border: none;
+    width: auto;
+    background: rgba(255, 255, 255,0.5);
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
